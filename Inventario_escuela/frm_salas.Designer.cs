@@ -43,11 +43,13 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.materialLabel1);
             this.panel1.Location = new System.Drawing.Point(-3, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(805, 37);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // materialLabel1
             // 

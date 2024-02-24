@@ -15,10 +15,17 @@ namespace Inventario_escuela
         public frm_salas()
         {
             InitializeComponent();
-            
+            //Container.Paint += dropShadow;
+
         }
         private void dropShadow(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
             Panel panel1 = (Panel)sender;
             Color[] shadow = new Color[3];
             shadow[0] = Color.FromArgb(181, 181, 181);
@@ -39,9 +46,8 @@ namespace Inventario_escuela
                         pt.Y++;
                     }
                 }
-            }
-            //Container.Paint += dropShadow;
+            }               
+            
         }
-
     }
 }
