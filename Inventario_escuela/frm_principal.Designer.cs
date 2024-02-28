@@ -55,6 +55,19 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnl_equipos = new System.Windows.Forms.Panel();
+            this.txt_serial = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.txt_nombre_equipo = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.button8 = new System.Windows.Forms.Button();
+            this.cmb_tipo = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txt_config_red = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.button9 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_buscar)).BeginInit();
@@ -64,6 +77,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnl_equipos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -360,9 +376,9 @@
             this.pnl_salas.Controls.Add(this.materialSingleLineTextField3);
             this.pnl_salas.Controls.Add(this.button1);
             this.pnl_salas.Controls.Add(this.cmb_estado);
-            this.pnl_salas.Location = new System.Drawing.Point(228, 103);
+            this.pnl_salas.Location = new System.Drawing.Point(852, 203);
             this.pnl_salas.Name = "pnl_salas";
-            this.pnl_salas.Size = new System.Drawing.Size(63, 38);
+            this.pnl_salas.Size = new System.Drawing.Size(46, 26);
             this.pnl_salas.TabIndex = 17;
             this.pnl_salas.Visible = false;
             // 
@@ -395,12 +411,175 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
+            // pnl_equipos
+            // 
+            this.pnl_equipos.Controls.Add(this.button9);
+            this.pnl_equipos.Controls.Add(this.pictureBox5);
+            this.pnl_equipos.Controls.Add(this.txt_config_red);
+            this.pnl_equipos.Controls.Add(this.comboBox1);
+            this.pnl_equipos.Controls.Add(this.txt_serial);
+            this.pnl_equipos.Controls.Add(this.button5);
+            this.pnl_equipos.Controls.Add(this.pictureBox4);
+            this.pnl_equipos.Controls.Add(this.button6);
+            this.pnl_equipos.Controls.Add(this.button7);
+            this.pnl_equipos.Controls.Add(this.txt_nombre_equipo);
+            this.pnl_equipos.Controls.Add(this.button8);
+            this.pnl_equipos.Controls.Add(this.cmb_tipo);
+            this.pnl_equipos.Location = new System.Drawing.Point(196, 43);
+            this.pnl_equipos.Name = "pnl_equipos";
+            this.pnl_equipos.Size = new System.Drawing.Size(811, 563);
+            this.pnl_equipos.TabIndex = 19;
+            this.pnl_equipos.Visible = false;
+            // 
+            // txt_serial
+            // 
+            this.txt_serial.Depth = 0;
+            this.txt_serial.Hint = "";
+            this.txt_serial.Location = new System.Drawing.Point(21, 17);
+            this.txt_serial.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txt_serial.Name = "txt_serial";
+            this.txt_serial.PasswordChar = '\0';
+            this.txt_serial.SelectedText = "";
+            this.txt_serial.SelectionLength = 0;
+            this.txt_serial.SelectionStart = 0;
+            this.txt_serial.Size = new System.Drawing.Size(250, 23);
+            this.txt_serial.TabIndex = 1;
+            this.txt_serial.Text = "Serial:";
+            this.txt_serial.UseSystemPasswordChar = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(535, 452);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(94, 36);
+            this.button5.TabIndex = 16;
+            this.button5.Text = "Actualizar";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(0, 51);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(813, 11);
+            this.pictureBox4.TabIndex = 12;
+            this.pictureBox4.TabStop = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(412, 452);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(94, 36);
+            this.button6.TabIndex = 15;
+            this.button6.Text = "Consultar";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(288, 452);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(94, 36);
+            this.button7.TabIndex = 14;
+            this.button7.Text = "Guardar";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // txt_nombre_equipo
+            // 
+            this.txt_nombre_equipo.Depth = 0;
+            this.txt_nombre_equipo.Hint = "";
+            this.txt_nombre_equipo.Location = new System.Drawing.Point(317, 17);
+            this.txt_nombre_equipo.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txt_nombre_equipo.Name = "txt_nombre_equipo";
+            this.txt_nombre_equipo.PasswordChar = '\0';
+            this.txt_nombre_equipo.SelectedText = "";
+            this.txt_nombre_equipo.SelectionLength = 0;
+            this.txt_nombre_equipo.SelectionStart = 0;
+            this.txt_nombre_equipo.Size = new System.Drawing.Size(422, 23);
+            this.txt_nombre_equipo.TabIndex = 4;
+            this.txt_nombre_equipo.Text = "Nombre del equipo:";
+            this.txt_nombre_equipo.UseSystemPasswordChar = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(161, 452);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(94, 36);
+            this.button8.TabIndex = 13;
+            this.button8.Text = "Nuevo";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // cmb_tipo
+            // 
+            this.cmb_tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_tipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_tipo.FormattingEnabled = true;
+            this.cmb_tipo.Items.AddRange(new object[] {
+            "Tipo"});
+            this.cmb_tipo.Location = new System.Drawing.Point(75, 106);
+            this.cmb_tipo.Name = "cmb_tipo";
+            this.cmb_tipo.Size = new System.Drawing.Size(320, 28);
+            this.cmb_tipo.TabIndex = 5;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Estado"});
+            this.comboBox1.Location = new System.Drawing.Point(75, 158);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(320, 28);
+            this.comboBox1.TabIndex = 17;
+            // 
+            // txt_config_red
+            // 
+            this.txt_config_red.Location = new System.Drawing.Point(75, 201);
+            this.txt_config_red.Multiline = true;
+            this.txt_config_red.Name = "txt_config_red";
+            this.txt_config_red.Size = new System.Drawing.Size(320, 186);
+            this.txt_config_red.TabIndex = 18;
+            this.txt_config_red.Text = "Configuración de red:";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(457, 106);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(314, 239);
+            this.pictureBox5.TabIndex = 19;
+            this.pictureBox5.TabStop = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(457, 351);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(314, 36);
+            this.button9.TabIndex = 20;
+            this.button9.Text = "Añadir especificaciones o aplicaciones";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
             // frm_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1005, 602);
+            this.Controls.Add(this.pnl_equipos);
             this.Controls.Add(this.pnl_salas);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -420,6 +599,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnl_equipos.ResumeLayout(false);
+            this.pnl_equipos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -451,5 +634,18 @@
         private System.Windows.Forms.PictureBox ptb_buscar;
         private System.Windows.Forms.Panel pnl_salas;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel pnl_equipos;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txt_serial;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txt_nombre_equipo;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.ComboBox cmb_tipo;
+        private System.Windows.Forms.TextBox txt_config_red;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
