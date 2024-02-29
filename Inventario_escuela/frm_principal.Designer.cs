@@ -35,9 +35,9 @@
             this.lbl_cerrar = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.txt_id = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField3 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.cmb_estado = new System.Windows.Forms.ComboBox();
+            this.txt_cantidad_equipos = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txt_nombre_sala = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.cmb_estado_sala = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ptb_buscar = new System.Windows.Forms.PictureBox();
             this.ptb_salas = new System.Windows.Forms.PictureBox();
@@ -46,17 +46,17 @@
             this.btn_salas = new System.Windows.Forms.Button();
             this.btn_registrar = new System.Windows.Forms.Button();
             this.lbl_fecha = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_nuevo_sala = new System.Windows.Forms.Button();
+            this.btn_guardar_sala = new System.Windows.Forms.Button();
+            this.btn_consultar_sala = new System.Windows.Forms.Button();
+            this.btn_actualizar_sala = new System.Windows.Forms.Button();
             this.tm_fecha = new System.Windows.Forms.Timer(this.components);
             this.pnl_salas = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_equipos = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btn_anhadir_especificacios_aplicaiones = new System.Windows.Forms.Button();
             this.ptb_foto = new System.Windows.Forms.PictureBox();
             this.txt_config_red = new System.Windows.Forms.TextBox();
             this.cmb_estado_equipo = new System.Windows.Forms.ComboBox();
@@ -157,51 +157,51 @@
             this.txt_id.Text = "ID de la sala:";
             this.txt_id.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField2
+            // txt_cantidad_equipos
             // 
-            this.materialSingleLineTextField2.Depth = 0;
-            this.materialSingleLineTextField2.Hint = "";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(229, 166);
-            this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
-            this.materialSingleLineTextField2.PasswordChar = '\0';
-            this.materialSingleLineTextField2.SelectedText = "";
-            this.materialSingleLineTextField2.SelectionLength = 0;
-            this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(289, 23);
-            this.materialSingleLineTextField2.TabIndex = 3;
-            this.materialSingleLineTextField2.Text = "Cantidad de equipos:";
-            this.materialSingleLineTextField2.UseSystemPasswordChar = false;
+            this.txt_cantidad_equipos.Depth = 0;
+            this.txt_cantidad_equipos.Hint = "";
+            this.txt_cantidad_equipos.Location = new System.Drawing.Point(229, 166);
+            this.txt_cantidad_equipos.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txt_cantidad_equipos.Name = "txt_cantidad_equipos";
+            this.txt_cantidad_equipos.PasswordChar = '\0';
+            this.txt_cantidad_equipos.SelectedText = "";
+            this.txt_cantidad_equipos.SelectionLength = 0;
+            this.txt_cantidad_equipos.SelectionStart = 0;
+            this.txt_cantidad_equipos.Size = new System.Drawing.Size(289, 23);
+            this.txt_cantidad_equipos.TabIndex = 3;
+            this.txt_cantidad_equipos.Text = "Cantidad de equipos:";
+            this.txt_cantidad_equipos.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField3
+            // txt_nombre_sala
             // 
-            this.materialSingleLineTextField3.Depth = 0;
-            this.materialSingleLineTextField3.Hint = "";
-            this.materialSingleLineTextField3.Location = new System.Drawing.Point(415, 17);
-            this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField3.Name = "materialSingleLineTextField3";
-            this.materialSingleLineTextField3.PasswordChar = '\0';
-            this.materialSingleLineTextField3.SelectedText = "";
-            this.materialSingleLineTextField3.SelectionLength = 0;
-            this.materialSingleLineTextField3.SelectionStart = 0;
-            this.materialSingleLineTextField3.Size = new System.Drawing.Size(289, 23);
-            this.materialSingleLineTextField3.TabIndex = 4;
-            this.materialSingleLineTextField3.Text = "Nombre de la sala:";
-            this.materialSingleLineTextField3.UseSystemPasswordChar = false;
+            this.txt_nombre_sala.Depth = 0;
+            this.txt_nombre_sala.Hint = "";
+            this.txt_nombre_sala.Location = new System.Drawing.Point(415, 17);
+            this.txt_nombre_sala.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txt_nombre_sala.Name = "txt_nombre_sala";
+            this.txt_nombre_sala.PasswordChar = '\0';
+            this.txt_nombre_sala.SelectedText = "";
+            this.txt_nombre_sala.SelectionLength = 0;
+            this.txt_nombre_sala.SelectionStart = 0;
+            this.txt_nombre_sala.Size = new System.Drawing.Size(289, 23);
+            this.txt_nombre_sala.TabIndex = 4;
+            this.txt_nombre_sala.Text = "Nombre de la sala:";
+            this.txt_nombre_sala.UseSystemPasswordChar = false;
             // 
-            // cmb_estado
+            // cmb_estado_sala
             // 
-            this.cmb_estado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_estado.FormattingEnabled = true;
-            this.cmb_estado.Items.AddRange(new object[] {
+            this.cmb_estado_sala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_estado_sala.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_estado_sala.FormattingEnabled = true;
+            this.cmb_estado_sala.Items.AddRange(new object[] {
             "Seleccionar estado",
             "ACTIVO",
             "INACTIVO"});
-            this.cmb_estado.Location = new System.Drawing.Point(229, 228);
-            this.cmb_estado.Name = "cmb_estado";
-            this.cmb_estado.Size = new System.Drawing.Size(289, 28);
-            this.cmb_estado.TabIndex = 5;
+            this.cmb_estado_sala.Location = new System.Drawing.Point(229, 228);
+            this.cmb_estado_sala.Name = "cmb_estado_sala";
+            this.cmb_estado_sala.Size = new System.Drawing.Size(289, 28);
+            this.cmb_estado_sala.TabIndex = 5;
             // 
             // panel2
             // 
@@ -317,53 +317,53 @@
             this.lbl_fecha.TabIndex = 4;
             this.lbl_fecha.Text = "lbl_fecha";
             // 
-            // button1
+            // btn_nuevo_sala
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(155, 351);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 36);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Nuevo";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_nuevo_sala.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
+            this.btn_nuevo_sala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_nuevo_sala.ForeColor = System.Drawing.Color.White;
+            this.btn_nuevo_sala.Location = new System.Drawing.Point(155, 351);
+            this.btn_nuevo_sala.Name = "btn_nuevo_sala";
+            this.btn_nuevo_sala.Size = new System.Drawing.Size(94, 36);
+            this.btn_nuevo_sala.TabIndex = 13;
+            this.btn_nuevo_sala.Text = "Nuevo";
+            this.btn_nuevo_sala.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btn_guardar_sala
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(282, 351);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 36);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_guardar_sala.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
+            this.btn_guardar_sala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_guardar_sala.ForeColor = System.Drawing.Color.White;
+            this.btn_guardar_sala.Location = new System.Drawing.Point(282, 351);
+            this.btn_guardar_sala.Name = "btn_guardar_sala";
+            this.btn_guardar_sala.Size = new System.Drawing.Size(94, 36);
+            this.btn_guardar_sala.TabIndex = 14;
+            this.btn_guardar_sala.Text = "Guardar";
+            this.btn_guardar_sala.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btn_consultar_sala
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(406, 351);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 36);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Consultar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_consultar_sala.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
+            this.btn_consultar_sala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_consultar_sala.ForeColor = System.Drawing.Color.White;
+            this.btn_consultar_sala.Location = new System.Drawing.Point(406, 351);
+            this.btn_consultar_sala.Name = "btn_consultar_sala";
+            this.btn_consultar_sala.Size = new System.Drawing.Size(94, 36);
+            this.btn_consultar_sala.TabIndex = 15;
+            this.btn_consultar_sala.Text = "Consultar";
+            this.btn_consultar_sala.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btn_actualizar_sala
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(529, 351);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 36);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Actualizar";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_actualizar_sala.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
+            this.btn_actualizar_sala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_actualizar_sala.ForeColor = System.Drawing.Color.White;
+            this.btn_actualizar_sala.Location = new System.Drawing.Point(529, 351);
+            this.btn_actualizar_sala.Name = "btn_actualizar_sala";
+            this.btn_actualizar_sala.Size = new System.Drawing.Size(94, 36);
+            this.btn_actualizar_sala.TabIndex = 16;
+            this.btn_actualizar_sala.Text = "Actualizar";
+            this.btn_actualizar_sala.UseVisualStyleBackColor = false;
             // 
             // tm_fecha
             // 
@@ -373,17 +373,17 @@
             // pnl_salas
             // 
             this.pnl_salas.Controls.Add(this.txt_id);
-            this.pnl_salas.Controls.Add(this.button4);
+            this.pnl_salas.Controls.Add(this.btn_actualizar_sala);
             this.pnl_salas.Controls.Add(this.pictureBox2);
-            this.pnl_salas.Controls.Add(this.button3);
-            this.pnl_salas.Controls.Add(this.materialSingleLineTextField2);
-            this.pnl_salas.Controls.Add(this.button2);
-            this.pnl_salas.Controls.Add(this.materialSingleLineTextField3);
-            this.pnl_salas.Controls.Add(this.button1);
-            this.pnl_salas.Controls.Add(this.cmb_estado);
-            this.pnl_salas.Location = new System.Drawing.Point(852, 203);
+            this.pnl_salas.Controls.Add(this.btn_consultar_sala);
+            this.pnl_salas.Controls.Add(this.txt_cantidad_equipos);
+            this.pnl_salas.Controls.Add(this.btn_guardar_sala);
+            this.pnl_salas.Controls.Add(this.txt_nombre_sala);
+            this.pnl_salas.Controls.Add(this.btn_nuevo_sala);
+            this.pnl_salas.Controls.Add(this.cmb_estado_sala);
+            this.pnl_salas.Location = new System.Drawing.Point(204, 47);
             this.pnl_salas.Name = "pnl_salas";
-            this.pnl_salas.Size = new System.Drawing.Size(46, 26);
+            this.pnl_salas.Size = new System.Drawing.Size(54, 46);
             this.pnl_salas.TabIndex = 17;
             this.pnl_salas.Visible = false;
             // 
@@ -418,7 +418,7 @@
             // 
             // pnl_equipos
             // 
-            this.pnl_equipos.Controls.Add(this.button9);
+            this.pnl_equipos.Controls.Add(this.btn_anhadir_especificacios_aplicaiones);
             this.pnl_equipos.Controls.Add(this.ptb_foto);
             this.pnl_equipos.Controls.Add(this.txt_config_red);
             this.pnl_equipos.Controls.Add(this.cmb_estado_equipo);
@@ -430,23 +430,23 @@
             this.pnl_equipos.Controls.Add(this.txt_nombre_equipo);
             this.pnl_equipos.Controls.Add(this.btn_nuevo_equipo);
             this.pnl_equipos.Controls.Add(this.cmb_tipo);
-            this.pnl_equipos.Location = new System.Drawing.Point(196, 43);
+            this.pnl_equipos.Location = new System.Drawing.Point(202, 43);
             this.pnl_equipos.Name = "pnl_equipos";
-            this.pnl_equipos.Size = new System.Drawing.Size(811, 563);
+            this.pnl_equipos.Size = new System.Drawing.Size(805, 550);
             this.pnl_equipos.TabIndex = 19;
             this.pnl_equipos.Visible = false;
             // 
-            // button9
+            // btn_anhadir_especificacios_aplicaiones
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(457, 351);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(314, 36);
-            this.button9.TabIndex = 20;
-            this.button9.Text = "Añadir especificaciones o aplicaciones";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btn_anhadir_especificacios_aplicaiones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(140)))), ((int)(((byte)(173)))));
+            this.btn_anhadir_especificacios_aplicaiones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_anhadir_especificacios_aplicaiones.ForeColor = System.Drawing.Color.White;
+            this.btn_anhadir_especificacios_aplicaiones.Location = new System.Drawing.Point(457, 351);
+            this.btn_anhadir_especificacios_aplicaiones.Name = "btn_anhadir_especificacios_aplicaiones";
+            this.btn_anhadir_especificacios_aplicaiones.Size = new System.Drawing.Size(314, 36);
+            this.btn_anhadir_especificacios_aplicaiones.TabIndex = 20;
+            this.btn_anhadir_especificacios_aplicaiones.Text = "Añadir especificaciones o aplicaciones";
+            this.btn_anhadir_especificacios_aplicaiones.UseVisualStyleBackColor = false;
             // 
             // ptb_foto
             // 
@@ -618,18 +618,18 @@
         private System.Windows.Forms.Panel pnl_titulo;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialSingleLineTextField txt_id;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField3;
-        private System.Windows.Forms.ComboBox cmb_estado;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txt_cantidad_equipos;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txt_nombre_sala;
+        private System.Windows.Forms.ComboBox cmb_estado_sala;
         private System.Windows.Forms.PictureBox pictureBox1;
         private MaterialSkin.Controls.MaterialLabel lbl_minimizar;
         private MaterialSkin.Controls.MaterialLabel lbl_cerrar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_nuevo_sala;
+        private System.Windows.Forms.Button btn_guardar_sala;
+        private System.Windows.Forms.Button btn_consultar_sala;
+        private System.Windows.Forms.Button btn_actualizar_sala;
         private System.Windows.Forms.Timer tm_fecha;
         private System.Windows.Forms.Label lbl_fecha;
         private System.Windows.Forms.Button btn_buscar;
@@ -651,7 +651,7 @@
         private System.Windows.Forms.ComboBox cmb_tipo;
         private System.Windows.Forms.TextBox txt_config_red;
         private System.Windows.Forms.ComboBox cmb_estado_equipo;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btn_anhadir_especificacios_aplicaiones;
         private System.Windows.Forms.PictureBox ptb_foto;
     }
 }

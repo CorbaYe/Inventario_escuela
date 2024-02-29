@@ -19,10 +19,10 @@ namespace Inventario_escuela
         public frm_principal()
         {
             InitializeComponent();
-            cmb_estado.SelectedIndex = 0;
+            cmb_estado_sala.SelectedIndex = 0;
             cmb_tipo.SelectedIndex = 0;
             cmb_estado_equipo.SelectedIndex = 0;
-            cmb_estado.SelectedIndex = 0;
+            cmb_estado_sala.SelectedIndex = 0;
             lbl_fecha.ForeColor = Color.White;
             tm_fecha.Tick += tm_fecha_Tick;
 
