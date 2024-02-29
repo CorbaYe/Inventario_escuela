@@ -12,9 +12,16 @@ namespace Inventario_escuela
 {
     public partial class frm_principal : Form
     {
+        //Declaración de variables para mover el formulario sin bordes
+        private bool moviendoFormulario;
+        private Point posicionActualPuntero;
+
         public frm_principal()
         {
             InitializeComponent();
+            cmb_estado.SelectedIndex = 0;
+            cmb_tipo.SelectedIndex = 0;
+            cmb_estado_equipo.SelectedIndex = 0;
             cmb_estado.SelectedIndex = 0;
             lbl_fecha.ForeColor = Color.White;
             tm_fecha.Tick += tm_fecha_Tick;
@@ -105,29 +112,45 @@ namespace Inventario_escuela
             btn_buscar.BackColor = Color.FromArgb(116, 140, 173);
         }
 
-        private void mostrar_sala()
+        private void mostrar_sala(String panel)
         {
-            if (pnl_salas.Visible)
+            if (panel == "Modulo equipo")
             {
-                pnl_salas.Visible = false;
+                if (pnl_equipos.Visible)
+                {
+                    pnl_equipos.Visible = false;
+                    pnl_salas.Visible = false;
+                }
+                else
+                {
+                    pnl_equipos.Visible = true;
+                    pnl_salas.Visible = false;
+                }
+            }else if(panel == "Modulo sala"){
+                if (pnl_salas.Visible)
+                {
+                    pnl_equipos.Visible = false;
+                    pnl_salas.Visible = false;
+                }
+                else
+                {
+                    pnl_equipos.Visible = false;
+                    pnl_salas.Visible = true;
+                }
             }
-            else
-            {
-                pnl_salas.Visible = true;
-            }
+
+            ///
+
             pnl_salas.Location = new Point(198, 95);
             pnl_salas.Size = new Size(809, 558);
-            
+            pnl_equipos.Location = new Point(198, 95);
+            pnl_equipos.Size = new Size(809, 558);
+
         }
 
         private void btn_salas_Click(object sender, EventArgs e)
         {
-            mostrar_sala();
-        }
-
-        private void ptb_salas_Click(object sender, EventArgs e)
-        {
-            mostrar_sala();
+            mostrar_sala("Modulo sala");
         }
 
         private void lbl_cerrar_MouseEnter(object sender, EventArgs e)
@@ -149,6 +172,43 @@ namespace Inventario_escuela
         private void lbl_minimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btn_registrar_Click(object sender, EventArgs e)
+        {
+            mostrar_sala("Modulo equipo");
+        }
+
+        //Mover formulario
+        private void pnl_titulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                moviendoFormulario = true;
+                posicionActualPuntero = new Point(e.X, e.Y);
+            }
+            else
+            {
+                moviendoFormulario = false;
+            }
+        }
+
+        private void pnl_titulo_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (moviendoFormulario)
+            {
+                Point nuevoPunto;
+
+                nuevoPunto = PointToScreen(new Point(e.X, e.Y));
+                nuevoPunto.Offset(-posicionActualPuntero.X, -posicionActualPuntero.Y);
+
+                Location = nuevoPunto;
+            }
+        }
+
+        private void pnl_titulo_MouseUp(object sender, MouseEventArgs e)
+        {
+            moviendoFormulario = false;
         }
     }
 }
