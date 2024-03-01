@@ -210,5 +210,10 @@ namespace Inventario_escuela
         {
             moviendoFormulario = false;
         }
+        //Fin mover formulario
+        private void btn_guardar_sala_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

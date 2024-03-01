@@ -340,6 +340,7 @@
             this.btn_guardar_sala.TabIndex = 14;
             this.btn_guardar_sala.Text = "Guardar";
             this.btn_guardar_sala.UseVisualStyleBackColor = false;
+            this.btn_guardar_sala.Click += new System.EventHandler(this.btn_guardar_sala_Click);
             // 
             // btn_consultar_sala
             // 
@@ -383,7 +384,7 @@
             this.pnl_salas.Controls.Add(this.cmb_estado_sala);
             this.pnl_salas.Location = new System.Drawing.Point(204, 47);
             this.pnl_salas.Name = "pnl_salas";
-            this.pnl_salas.Size = new System.Drawing.Size(54, 46);
+            this.pnl_salas.Size = new System.Drawing.Size(748, 543);
             this.pnl_salas.TabIndex = 17;
             this.pnl_salas.Visible = false;
             // 
