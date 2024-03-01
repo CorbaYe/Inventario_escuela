@@ -13,10 +13,10 @@ namespace controlador
         {
             conex = new MySqlConnection();
             //************* CONEXION LOCAL ******************
-            String servidor = "localhost";
+            String servidor = "127.0.0.1";
             String bd = "dbs_inventario";
             String usuario = "root";
-            String contraseña = "";
+            String contraseña = "admin";
             String puerto = "3306";
             cadenaconexion = "server=" + servidor + ";port=" + puerto + ";user id=" + usuario + ";password=" + contraseña + ";database=" + bd + ";";
             try

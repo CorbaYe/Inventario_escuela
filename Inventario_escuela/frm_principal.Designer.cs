@@ -195,7 +195,6 @@
             this.cmb_estado_sala.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_estado_sala.FormattingEnabled = true;
             this.cmb_estado_sala.Items.AddRange(new object[] {
-            "Seleccionar estado",
             "ACTIVO",
             "INACTIVO"});
             this.cmb_estado_sala.Location = new System.Drawing.Point(229, 228);

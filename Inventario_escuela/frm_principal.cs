@@ -212,9 +212,14 @@ namespace Inventario_escuela
             moviendoFormulario = false;
         }
         //Fin mover formulario
+        private void fnt_registrar(String id, String nombre, String estado)
+        {
+            cls_salas obj_registrar = new cls_salas();
+            obj_registrar.fnt_registrar(id,nombre,estado);
+        }
         private void btn_guardar_sala_Click(object sender, EventArgs e)
         {
-
+            fnt_registrar(txt_id.Text, txt_nombre_sala.Text, Convert.ToString(cmb_estado_equipo.SelectedIndex + 1));
         }
     }
 }
