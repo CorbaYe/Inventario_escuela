@@ -6,12 +6,12 @@ namespace controlador
 {
     public class cls_salas
     {
-        //private String id;
-        //private String nombre;
-        //private int cantidad;
-        //private String codigo_estado;
+        private String id_estado;
+        private String nombre_estado;
+        private int cantidad_equipos;
+        private String codigo_estado;
         cls_conexion objConectar = new cls_conexion();
-        public void fnt_registrar(string id, string nombre, string codigo_estado)
+        public void fnt_registrar(string id, string nombre, string codigo)
         {
             if (id == "" || nombre == "")
             {
@@ -22,7 +22,7 @@ namespace controlador
                 try
                 {
                     objConectar.fnt_conectar();
-                    string sql = "insert into tbl_sala " +
+                    string sql = "insert into tbl_sala(pk_id,nombre,cantidad_equipos,fk_codigo_tbl_estado) " +
                         "values ('" + id + "','" + nombre + "',0,'" + codigo_estado + "')";
                     MySqlCommand comando = new MySqlCommand(sql, objConectar.conex);
                     comando.ExecuteNonQuery();
