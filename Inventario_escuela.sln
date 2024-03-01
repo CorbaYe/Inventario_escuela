@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventario_escuela", "Inventario_escuela\Inventario_escuela.csproj", "{43AF3185-CEDF-40D4-B022-7EE4F9E49767}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vistas", "Inventario_escuela\vistas.csproj", "{43AF3185-CEDF-40D4-B022-7EE4F9E49767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "controlador", "controlador\controlador.csproj", "{909503D1-9144-4796-9B21-BC6E8DB9DA30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{43AF3185-CEDF-40D4-B022-7EE4F9E49767}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43AF3185-CEDF-40D4-B022-7EE4F9E49767}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43AF3185-CEDF-40D4-B022-7EE4F9E49767}.Release|Any CPU.Build.0 = Release|Any CPU
+		{909503D1-9144-4796-9B21-BC6E8DB9DA30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909503D1-9144-4796-9B21-BC6E8DB9DA30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909503D1-9144-4796-9B21-BC6E8DB9DA30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909503D1-9144-4796-9B21-BC6E8DB9DA30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

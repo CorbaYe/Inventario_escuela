@@ -430,9 +430,9 @@
             this.pnl_equipos.Controls.Add(this.txt_nombre_equipo);
             this.pnl_equipos.Controls.Add(this.btn_nuevo_equipo);
             this.pnl_equipos.Controls.Add(this.cmb_tipo);
-            this.pnl_equipos.Location = new System.Drawing.Point(202, 43);
+            this.pnl_equipos.Location = new System.Drawing.Point(527, 51);
             this.pnl_equipos.Name = "pnl_equipos";
-            this.pnl_equipos.Size = new System.Drawing.Size(805, 550);
+            this.pnl_equipos.Size = new System.Drawing.Size(36, 34);
             this.pnl_equipos.TabIndex = 19;
             this.pnl_equipos.Visible = false;
             // 
