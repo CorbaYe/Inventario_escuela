@@ -23,7 +23,7 @@ namespace controlador
                 {
                     objConectar.fnt_conectar();
                     string sql = "insert into tbl_sala(pk_id,nombre,cantidad_equipos,fk_codigo_tbl_estado) " +
-                        "values ('" + id + "','" + nombre + "',0,'" + codigo_estado + "')";
+                    "Values('" + id + "','" + nombre + "',0,'" + codigo + "')";
                     MySqlCommand comando = new MySqlCommand(sql, objConectar.conex);
                     comando.ExecuteNonQuery();
                     MessageBox.Show("Sala registrada con éxito", "Registrar", MessageBoxButtons.OK, MessageBoxIcon.Information);
