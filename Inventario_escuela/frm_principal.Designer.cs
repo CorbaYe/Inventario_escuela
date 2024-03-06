@@ -365,6 +365,7 @@
             this.btn_actualizar_sala.TabIndex = 16;
             this.btn_actualizar_sala.Text = "Actualizar";
             this.btn_actualizar_sala.UseVisualStyleBackColor = false;
+            this.btn_actualizar_sala.Click += new System.EventHandler(this.btn_actualizar_sala_Click);
             // 
             // tm_fecha
             // 

@@ -223,11 +223,17 @@ namespace Inventario_escuela
         }
         private void btn_consultar_sala_Click(object sender, EventArgs e)
         {
-            cls_salas objConsultar = new cls_salas();
-            objConsultar.fnt_consultar(txt_id.Text);
-            txt_nombre_sala.Text = objConsultar.getNombre();
-            txt_cantidad_equipos.Text = Convert.ToString(objConsultar.getCantidad());
-            cmb_estado_sala.SelectedIndex = Convert.ToInt32(objConsultar.getEstado()) - 1;
+            cls_salas obj_consultar = new cls_salas();
+            obj_consultar.fnt_consultar(txt_id.Text);
+            txt_nombre_sala.Text = obj_consultar.getNombre();
+            txt_cantidad_equipos.Text = Convert.ToString(obj_consultar.getCantidad());
+            cmb_estado_sala.SelectedIndex = Convert.ToInt32(obj_consultar.getEstado()) - 1;
+        }
+
+        private void btn_actualizar_sala_Click(object sender, EventArgs e)
+        {
+            cls_salas obj_actualizar = new cls_salas();
+            obj_actualizar.fnt_actualizar(txt_id.Text,txt_nombre_sala.Text, Convert.ToString(cmb_estado_sala.SelectedIndex + 1));
         }
     }
 }

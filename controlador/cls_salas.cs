@@ -11,7 +11,7 @@ namespace controlador
         private int cantidad_equipos;
         private String codigo_estado;
         cls_conexion objConectar = new cls_conexion();
-        public void fnt_registrar(string id, string nombre, string codigo)
+        public void fnt_registrar(string id, string nombre, string cod_estado)
         {
             if (id == "" || nombre == "")
             {
@@ -23,7 +23,7 @@ namespace controlador
                 {
                     objConectar.fnt_conectar();
                     string sql = "insert into tbl_sala(pk_id,nombre,cantidad_equipos,fk_codigo_tbl_estado) " +
-                    "Values('" + id + "','" + nombre + "',0,'" + codigo + "')";
+                    "Values('" + id + "','" + nombre + "',0,'" + cod_estado + "')";
                     MySqlCommand comando = new MySqlCommand(sql, objConectar.conex);
                     comando.ExecuteNonQuery();
                     MessageBox.Show("Sala registrada con éxito", "Registrar", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -54,6 +54,20 @@ namespace controlador
                 }
                 else { MessageBox.Show("No se encontraron registros", "Consultar", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             }
+        }
+
+        public void fnt_actualizar(string id, string nombre, string cod_estado)
+        {
+            try
+            {
+                objConectar.fnt_conectar();
+                string sql = "update tbl_sala set nombre = '" + nombre + "',fk_codigo_tbl_estado ='" + cod_estado + "' where pk_id = '" + id + "'";
+                MySqlCommand comando = new MySqlCommand(sql, objConectar.conex);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Saka actualizada con éxito", "Registrar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                objConectar.fnt_Desconectar();
+            }
+            catch { MessageBox.Show("Problemas con la actualización de la sala contactar con el administrador", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
         public string getId() { return this.id_estado; }
