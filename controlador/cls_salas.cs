@@ -32,5 +32,33 @@ namespace controlador
                 catch { MessageBox.Show("Problemas con el registro de la sala contactar con el administrador", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             }
         }
+
+        public void fnt_consultar(string id)
+        {
+            if (id == "")
+            {
+                MessageBox.Show("Debe ingresar el código de la sala", "Consultar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                objConectar.fnt_conectar();
+                String sql = "select * from tbl_sala where pk_id ='" + id + "'";
+                MySqlCommand comando = new MySqlCommand(sql, objConectar.conex);
+                MySqlDataReader reader = comando.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    reader.Read();
+                    nombre_estado = reader["nombre"].ToString();
+                    cantidad_equipos = Convert.ToInt32(reader["cantidad_equipos"].ToString());
+                    codigo_estado = reader["fk_codigo_tbl_estado"].ToString();
+                }
+                else { MessageBox.Show("No se encontraron registros", "Consultar", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            }
+        }
+
+        public string getId() { return this.id_estado; }
+        public string getNombre() { return this.nombre_estado; }
+        public string getEstado() { return this.codigo_estado; }
+        public int getCantidad() { return this.cantidad_equipos; }
     }
 }

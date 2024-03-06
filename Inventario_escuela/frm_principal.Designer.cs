@@ -352,6 +352,7 @@
             this.btn_consultar_sala.TabIndex = 15;
             this.btn_consultar_sala.Text = "Consultar";
             this.btn_consultar_sala.UseVisualStyleBackColor = false;
+            this.btn_consultar_sala.Click += new System.EventHandler(this.btn_consultar_sala_Click);
             // 
             // btn_actualizar_sala
             // 
