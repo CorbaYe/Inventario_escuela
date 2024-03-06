@@ -144,7 +144,7 @@
             // txt_id
             // 
             this.txt_id.Depth = 0;
-            this.txt_id.Hint = "";
+            this.txt_id.Hint = "ID de la sala:";
             this.txt_id.Location = new System.Drawing.Point(90, 17);
             this.txt_id.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_id.Name = "txt_id";
@@ -154,13 +154,12 @@
             this.txt_id.SelectionStart = 0;
             this.txt_id.Size = new System.Drawing.Size(250, 23);
             this.txt_id.TabIndex = 1;
-            this.txt_id.Text = "ID de la sala:";
             this.txt_id.UseSystemPasswordChar = false;
             // 
             // txt_cantidad_equipos
             // 
             this.txt_cantidad_equipos.Depth = 0;
-            this.txt_cantidad_equipos.Hint = "";
+            this.txt_cantidad_equipos.Hint = "Cantidad de equipos:";
             this.txt_cantidad_equipos.Location = new System.Drawing.Point(229, 166);
             this.txt_cantidad_equipos.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_cantidad_equipos.Name = "txt_cantidad_equipos";
@@ -170,13 +169,12 @@
             this.txt_cantidad_equipos.SelectionStart = 0;
             this.txt_cantidad_equipos.Size = new System.Drawing.Size(289, 23);
             this.txt_cantidad_equipos.TabIndex = 3;
-            this.txt_cantidad_equipos.Text = "Cantidad de equipos:";
             this.txt_cantidad_equipos.UseSystemPasswordChar = false;
             // 
             // txt_nombre_sala
             // 
             this.txt_nombre_sala.Depth = 0;
-            this.txt_nombre_sala.Hint = "";
+            this.txt_nombre_sala.Hint = "Nombre de la sala:";
             this.txt_nombre_sala.Location = new System.Drawing.Point(415, 17);
             this.txt_nombre_sala.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_nombre_sala.Name = "txt_nombre_sala";
@@ -186,7 +184,6 @@
             this.txt_nombre_sala.SelectionStart = 0;
             this.txt_nombre_sala.Size = new System.Drawing.Size(289, 23);
             this.txt_nombre_sala.TabIndex = 4;
-            this.txt_nombre_sala.Text = "Nombre de la sala:";
             this.txt_nombre_sala.UseSystemPasswordChar = false;
             // 
             // cmb_estado_sala
@@ -385,7 +382,7 @@
             this.pnl_salas.Controls.Add(this.cmb_estado_sala);
             this.pnl_salas.Location = new System.Drawing.Point(204, 47);
             this.pnl_salas.Name = "pnl_salas";
-            this.pnl_salas.Size = new System.Drawing.Size(748, 543);
+            this.pnl_salas.Size = new System.Drawing.Size(66, 38);
             this.pnl_salas.TabIndex = 17;
             this.pnl_salas.Visible = false;
             // 
@@ -432,9 +429,9 @@
             this.pnl_equipos.Controls.Add(this.txt_nombre_equipo);
             this.pnl_equipos.Controls.Add(this.btn_nuevo_equipo);
             this.pnl_equipos.Controls.Add(this.cmb_tipo);
-            this.pnl_equipos.Location = new System.Drawing.Point(527, 51);
+            this.pnl_equipos.Location = new System.Drawing.Point(225, 91);
             this.pnl_equipos.Name = "pnl_equipos";
-            this.pnl_equipos.Size = new System.Drawing.Size(36, 34);
+            this.pnl_equipos.Size = new System.Drawing.Size(782, 483);
             this.pnl_equipos.TabIndex = 19;
             this.pnl_equipos.Visible = false;
             // 
@@ -483,7 +480,7 @@
             // txt_serial
             // 
             this.txt_serial.Depth = 0;
-            this.txt_serial.Hint = "";
+            this.txt_serial.Hint = "Serial:";
             this.txt_serial.Location = new System.Drawing.Point(21, 17);
             this.txt_serial.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_serial.Name = "txt_serial";
@@ -493,7 +490,6 @@
             this.txt_serial.SelectionStart = 0;
             this.txt_serial.Size = new System.Drawing.Size(250, 23);
             this.txt_serial.TabIndex = 1;
-            this.txt_serial.Text = "Serial:";
             this.txt_serial.UseSystemPasswordChar = false;
             // 
             // btn_actualizar_equipo
@@ -544,7 +540,7 @@
             // txt_nombre_equipo
             // 
             this.txt_nombre_equipo.Depth = 0;
-            this.txt_nombre_equipo.Hint = "";
+            this.txt_nombre_equipo.Hint = "Nombre del equipo:";
             this.txt_nombre_equipo.Location = new System.Drawing.Point(317, 17);
             this.txt_nombre_equipo.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_nombre_equipo.Name = "txt_nombre_equipo";
@@ -554,7 +550,6 @@
             this.txt_nombre_equipo.SelectionStart = 0;
             this.txt_nombre_equipo.Size = new System.Drawing.Size(422, 23);
             this.txt_nombre_equipo.TabIndex = 4;
-            this.txt_nombre_equipo.Text = "Nombre del equipo:";
             this.txt_nombre_equipo.UseSystemPasswordChar = false;
             // 
             // btn_nuevo_equipo
