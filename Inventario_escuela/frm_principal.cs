@@ -221,19 +221,40 @@ namespace Inventario_escuela
         {
             fnt_registrar(txt_id.Text, txt_nombre_sala.Text, Convert.ToString(cmb_estado_sala.SelectedIndex + 1));
         }
-        private void btn_consultar_sala_Click(object sender, EventArgs e)
+        private void fnt_consultar(String id)
         {
             cls_salas obj_consultar = new cls_salas();
-            obj_consultar.fnt_consultar(txt_id.Text);
+            obj_consultar.fnt_consultar(id);
             txt_nombre_sala.Text = obj_consultar.getNombre();
             txt_cantidad_equipos.Text = Convert.ToString(obj_consultar.getCantidad());
             cmb_estado_sala.SelectedIndex = Convert.ToInt32(obj_consultar.getEstado()) - 1;
+        }
+        private void btn_consultar_sala_Click(object sender, EventArgs e)
+        {
+            fnt_consultar(txt_id.Text);
         }
 
         private void btn_actualizar_sala_Click(object sender, EventArgs e)
         {
             cls_salas obj_actualizar = new cls_salas();
             obj_actualizar.fnt_actualizar(txt_id.Text,txt_nombre_sala.Text, Convert.ToString(cmb_estado_sala.SelectedIndex + 1));
+        }
+
+        private void txt_id_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                fnt_consultar(txt_id.Text);
+            }
+        }
+
+        private void btn_nuevo_sala_Click(object sender, EventArgs e)
+        {
+            txt_id.Clear();
+            txt_nombre_sala.Clear();
+            txt_cantidad_equipos.Clear();
+            cmb_estado_sala.SelectedIndex = 0;
+            txt_id.Focus();
         }
     }
 }

@@ -155,6 +155,7 @@
             this.txt_id.Size = new System.Drawing.Size(250, 23);
             this.txt_id.TabIndex = 1;
             this.txt_id.UseSystemPasswordChar = false;
+            this.txt_id.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_id_KeyUp);
             // 
             // txt_cantidad_equipos
             // 
@@ -324,6 +325,7 @@
             this.btn_nuevo_sala.TabIndex = 13;
             this.btn_nuevo_sala.Text = "Nuevo";
             this.btn_nuevo_sala.UseVisualStyleBackColor = false;
+            this.btn_nuevo_sala.Click += new System.EventHandler(this.btn_nuevo_sala_Click);
             // 
             // btn_guardar_sala
             // 
@@ -382,7 +384,7 @@
             this.pnl_salas.Controls.Add(this.cmb_estado_sala);
             this.pnl_salas.Location = new System.Drawing.Point(204, 47);
             this.pnl_salas.Name = "pnl_salas";
-            this.pnl_salas.Size = new System.Drawing.Size(66, 38);
+            this.pnl_salas.Size = new System.Drawing.Size(731, 470);
             this.pnl_salas.TabIndex = 17;
             this.pnl_salas.Visible = false;
             // 
@@ -431,7 +433,7 @@
             this.pnl_equipos.Controls.Add(this.cmb_tipo);
             this.pnl_equipos.Location = new System.Drawing.Point(225, 91);
             this.pnl_equipos.Name = "pnl_equipos";
-            this.pnl_equipos.Size = new System.Drawing.Size(782, 483);
+            this.pnl_equipos.Size = new System.Drawing.Size(28, 26);
             this.pnl_equipos.TabIndex = 19;
             this.pnl_equipos.Visible = false;
             // 
