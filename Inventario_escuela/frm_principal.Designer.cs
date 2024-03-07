@@ -384,7 +384,7 @@
             this.pnl_salas.Controls.Add(this.cmb_estado_sala);
             this.pnl_salas.Location = new System.Drawing.Point(204, 47);
             this.pnl_salas.Name = "pnl_salas";
-            this.pnl_salas.Size = new System.Drawing.Size(731, 470);
+            this.pnl_salas.Size = new System.Drawing.Size(49, 38);
             this.pnl_salas.TabIndex = 17;
             this.pnl_salas.Visible = false;
             // 
