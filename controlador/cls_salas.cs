@@ -6,8 +6,8 @@ namespace controlador
 {
     public class cls_salas
     {
-        private String id_estado;
-        private String nombre_estado;
+        private String id_sala;
+        private String nombre_sala;
         private int cantidad_equipos;
         private String codigo_estado;
         cls_conexion objConectar = new cls_conexion();
@@ -48,7 +48,7 @@ namespace controlador
                 if (reader.HasRows)
                 {
                     reader.Read();
-                    nombre_estado = reader["nombre"].ToString();
+                    nombre_sala = reader["nombre"].ToString();
                     cantidad_equipos = Convert.ToInt32(reader["cantidad_equipos"].ToString());
                     codigo_estado = reader["fk_codigo_tbl_estado"].ToString();
                 }
@@ -70,8 +70,8 @@ namespace controlador
             catch { MessageBox.Show("Problemas con la actualización de la sala contactar con el administrador", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
-        public string getId() { return this.id_estado; }
-        public string getNombre() { return this.nombre_estado; }
+        public string getId() { return this.id_sala; }
+        public string getNombre() { return this.nombre_sala; }
         public string getEstado() { return this.codigo_estado; }
         public int getCantidad() { return this.cantidad_equipos; }
     }
