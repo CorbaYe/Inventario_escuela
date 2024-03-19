@@ -26,6 +26,8 @@ namespace Inventario_escuela
             cmb_estado_sala.SelectedIndex = 0;
             lbl_fecha.ForeColor = Color.White;
             tm_fecha.Tick += tm_fecha_Tick;
+            lbl_especificaciones.Text = string.Empty;
+            lbl_aplicaciones.Text = string.Empty;
 
         }
         private void tm_fecha_Tick(object sender, EventArgs e)
@@ -255,6 +257,23 @@ namespace Inventario_escuela
             txt_cantidad_equipos.Clear();
             cmb_estado_sala.SelectedIndex = 0;
             txt_id.Focus();
+        }
+        private void fnt_validar_especificaciones_apps()
+        {
+            frm_equipos_app_especificaciones especificaciones_apps = new frm_equipos_app_especificaciones();
+            especificaciones_apps.getAplicaciones = lbl_aplicaciones.Text;
+            especificaciones_apps.getEspeficaciones = lbl_especificaciones.Text;
+            especificaciones_apps.ShowDialog();
+            if (especificaciones_apps.getEstado)
+            {
+                lbl_aplicaciones.Text = especificaciones_apps.getAplicaciones;
+                lbl_especificaciones.Text = especificaciones_apps.getAplicaciones;
+            }
+        }
+
+        private void btn_anhadir_especificacios_aplicaiones_Click(object sender, EventArgs e)
+        {
+            fnt_validar_especificaciones_apps(); 
         }
     }
 }

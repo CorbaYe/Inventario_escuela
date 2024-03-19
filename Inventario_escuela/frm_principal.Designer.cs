@@ -39,9 +39,6 @@
             this.txt_nombre_sala = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.cmb_estado_sala = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.ptb_buscar = new System.Windows.Forms.PictureBox();
-            this.ptb_salas = new System.Windows.Forms.PictureBox();
-            this.ptb_registrar = new System.Windows.Forms.PictureBox();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.btn_salas = new System.Windows.Forms.Button();
             this.btn_registrar = new System.Windows.Forms.Button();
@@ -52,34 +49,39 @@
             this.btn_actualizar_sala = new System.Windows.Forms.Button();
             this.tm_fecha = new System.Windows.Forms.Timer(this.components);
             this.pnl_salas = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_equipos = new System.Windows.Forms.Panel();
             this.btn_anhadir_especificacios_aplicaiones = new System.Windows.Forms.Button();
-            this.ptb_foto = new System.Windows.Forms.PictureBox();
             this.txt_config_red = new System.Windows.Forms.TextBox();
             this.cmb_estado_equipo = new System.Windows.Forms.ComboBox();
             this.txt_serial = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btn_actualizar_equipo = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btn_consultar_equipo = new System.Windows.Forms.Button();
             this.btn_guardar_equipo = new System.Windows.Forms.Button();
             this.txt_nombre_equipo = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btn_nuevo_equipo = new System.Windows.Forms.Button();
             this.cmb_tipo = new System.Windows.Forms.ComboBox();
+            this.ptb_foto = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ptb_buscar = new System.Windows.Forms.PictureBox();
+            this.ptb_salas = new System.Windows.Forms.PictureBox();
+            this.ptb_registrar = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lbl_aplicaciones = new System.Windows.Forms.Label();
+            this.lbl_especificaciones = new System.Windows.Forms.Label();
             this.pnl_titulo.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_buscar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_salas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_registrar)).BeginInit();
             this.pnl_salas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_equipos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_foto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_buscar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_salas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_registrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_titulo
@@ -101,12 +103,12 @@
             this.lbl_minimizar.AutoSize = true;
             this.lbl_minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_minimizar.Depth = 0;
-            this.lbl_minimizar.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lbl_minimizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.lbl_minimizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbl_minimizar.Location = new System.Drawing.Point(954, 14);
             this.lbl_minimizar.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbl_minimizar.Name = "lbl_minimizar";
-            this.lbl_minimizar.Size = new System.Drawing.Size(17, 19);
+            this.lbl_minimizar.Size = new System.Drawing.Size(18, 18);
             this.lbl_minimizar.TabIndex = 2;
             this.lbl_minimizar.Text = "--";
             this.lbl_minimizar.Click += new System.EventHandler(this.lbl_minimizar_Click);
@@ -116,12 +118,12 @@
             this.lbl_cerrar.AutoSize = true;
             this.lbl_cerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_cerrar.Depth = 0;
-            this.lbl_cerrar.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lbl_cerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.lbl_cerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbl_cerrar.Location = new System.Drawing.Point(978, 14);
             this.lbl_cerrar.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbl_cerrar.Name = "lbl_cerrar";
-            this.lbl_cerrar.Size = new System.Drawing.Size(18, 19);
+            this.lbl_cerrar.Size = new System.Drawing.Size(18, 18);
             this.lbl_cerrar.TabIndex = 1;
             this.lbl_cerrar.Text = "X";
             this.lbl_cerrar.Click += new System.EventHandler(this.lbl_cerrar_Click);
@@ -132,12 +134,12 @@
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(11, 10);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(135, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(130, 18);
             this.materialLabel1.TabIndex = 0;
             this.materialLabel1.Text = "Inventario de aulas";
             // 
@@ -214,44 +216,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 566);
             this.panel2.TabIndex = 11;
-            // 
-            // ptb_buscar
-            // 
-            this.ptb_buscar.Image = global::Inventario_escuela.Properties.Resources.icons8_buscar_50;
-            this.ptb_buscar.Location = new System.Drawing.Point(4, 241);
-            this.ptb_buscar.Name = "ptb_buscar";
-            this.ptb_buscar.Size = new System.Drawing.Size(56, 48);
-            this.ptb_buscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptb_buscar.TabIndex = 21;
-            this.ptb_buscar.TabStop = false;
-            this.ptb_buscar.MouseEnter += new System.EventHandler(this.ptb_buscar_MouseEnter);
-            this.ptb_buscar.MouseLeave += new System.EventHandler(this.ptb_buscar_MouseLeave);
-            // 
-            // ptb_salas
-            // 
-            this.ptb_salas.Image = global::Inventario_escuela.Properties.Resources.icons8_habitación_50;
-            this.ptb_salas.Location = new System.Drawing.Point(4, 191);
-            this.ptb_salas.Name = "ptb_salas";
-            this.ptb_salas.Size = new System.Drawing.Size(56, 48);
-            this.ptb_salas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptb_salas.TabIndex = 20;
-            this.ptb_salas.TabStop = false;
-            this.ptb_salas.Click += new System.EventHandler(this.btn_salas_Click);
-            this.ptb_salas.MouseEnter += new System.EventHandler(this.ptb_salas_MouseEnter);
-            this.ptb_salas.MouseLeave += new System.EventHandler(this.ptb_salas_MouseLeave);
-            // 
-            // ptb_registrar
-            // 
-            this.ptb_registrar.Image = global::Inventario_escuela.Properties.Resources.icons8_computadora_80;
-            this.ptb_registrar.Location = new System.Drawing.Point(3, 141);
-            this.ptb_registrar.Name = "ptb_registrar";
-            this.ptb_registrar.Size = new System.Drawing.Size(56, 48);
-            this.ptb_registrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptb_registrar.TabIndex = 17;
-            this.ptb_registrar.TabStop = false;
-            this.ptb_registrar.Click += new System.EventHandler(this.btn_registrar_Click);
-            this.ptb_registrar.MouseEnter += new System.EventHandler(this.ptb_registrar_MouseEnter);
-            this.ptb_registrar.MouseLeave += new System.EventHandler(this.ptb_registrar_MouseLeave);
             // 
             // btn_buscar
             // 
@@ -388,35 +352,6 @@
             this.pnl_salas.TabIndex = 17;
             this.pnl_salas.Visible = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 51);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(813, 11);
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Inventario_escuela.Properties.Resources.background;
-            this.pictureBox3.Location = new System.Drawing.Point(346, 149);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(415, 368);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 18;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-2, 35);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1009, 10);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
             // pnl_equipos
             // 
             this.pnl_equipos.Controls.Add(this.btn_anhadir_especificacios_aplicaiones);
@@ -431,9 +366,9 @@
             this.pnl_equipos.Controls.Add(this.txt_nombre_equipo);
             this.pnl_equipos.Controls.Add(this.btn_nuevo_equipo);
             this.pnl_equipos.Controls.Add(this.cmb_tipo);
-            this.pnl_equipos.Location = new System.Drawing.Point(225, 91);
+            this.pnl_equipos.Location = new System.Drawing.Point(204, 91);
             this.pnl_equipos.Name = "pnl_equipos";
-            this.pnl_equipos.Size = new System.Drawing.Size(28, 26);
+            this.pnl_equipos.Size = new System.Drawing.Size(49, 20);
             this.pnl_equipos.TabIndex = 19;
             this.pnl_equipos.Visible = false;
             // 
@@ -448,15 +383,7 @@
             this.btn_anhadir_especificacios_aplicaiones.TabIndex = 20;
             this.btn_anhadir_especificacios_aplicaiones.Text = "Añadir especificaciones o aplicaciones";
             this.btn_anhadir_especificacios_aplicaiones.UseVisualStyleBackColor = false;
-            // 
-            // ptb_foto
-            // 
-            this.ptb_foto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ptb_foto.Location = new System.Drawing.Point(457, 106);
-            this.ptb_foto.Name = "ptb_foto";
-            this.ptb_foto.Size = new System.Drawing.Size(314, 239);
-            this.ptb_foto.TabIndex = 19;
-            this.ptb_foto.TabStop = false;
+            this.btn_anhadir_especificacios_aplicaiones.Click += new System.EventHandler(this.btn_anhadir_especificacios_aplicaiones_Click);
             // 
             // txt_config_red
             // 
@@ -505,15 +432,6 @@
             this.btn_actualizar_equipo.TabIndex = 16;
             this.btn_actualizar_equipo.Text = "Actualizar";
             this.btn_actualizar_equipo.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(0, 51);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(813, 11);
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
             // 
             // btn_consultar_equipo
             // 
@@ -578,12 +496,118 @@
             this.cmb_tipo.Size = new System.Drawing.Size(320, 28);
             this.cmb_tipo.TabIndex = 5;
             // 
+            // ptb_foto
+            // 
+            this.ptb_foto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptb_foto.Location = new System.Drawing.Point(457, 106);
+            this.ptb_foto.Name = "ptb_foto";
+            this.ptb_foto.Size = new System.Drawing.Size(314, 239);
+            this.ptb_foto.TabIndex = 19;
+            this.ptb_foto.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(0, 51);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(813, 11);
+            this.pictureBox4.TabIndex = 12;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 51);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(813, 11);
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
+            // ptb_buscar
+            // 
+            this.ptb_buscar.Image = global::Inventario_escuela.Properties.Resources.icons8_buscar_50;
+            this.ptb_buscar.Location = new System.Drawing.Point(4, 241);
+            this.ptb_buscar.Name = "ptb_buscar";
+            this.ptb_buscar.Size = new System.Drawing.Size(56, 48);
+            this.ptb_buscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_buscar.TabIndex = 21;
+            this.ptb_buscar.TabStop = false;
+            this.ptb_buscar.MouseEnter += new System.EventHandler(this.ptb_buscar_MouseEnter);
+            this.ptb_buscar.MouseLeave += new System.EventHandler(this.ptb_buscar_MouseLeave);
+            // 
+            // ptb_salas
+            // 
+            this.ptb_salas.Image = global::Inventario_escuela.Properties.Resources.icons8_habitación_50;
+            this.ptb_salas.Location = new System.Drawing.Point(4, 191);
+            this.ptb_salas.Name = "ptb_salas";
+            this.ptb_salas.Size = new System.Drawing.Size(56, 48);
+            this.ptb_salas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_salas.TabIndex = 20;
+            this.ptb_salas.TabStop = false;
+            this.ptb_salas.Click += new System.EventHandler(this.btn_salas_Click);
+            this.ptb_salas.MouseEnter += new System.EventHandler(this.ptb_salas_MouseEnter);
+            this.ptb_salas.MouseLeave += new System.EventHandler(this.ptb_salas_MouseLeave);
+            // 
+            // ptb_registrar
+            // 
+            this.ptb_registrar.Image = global::Inventario_escuela.Properties.Resources.icons8_computadora_80;
+            this.ptb_registrar.Location = new System.Drawing.Point(3, 141);
+            this.ptb_registrar.Name = "ptb_registrar";
+            this.ptb_registrar.Size = new System.Drawing.Size(56, 48);
+            this.ptb_registrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_registrar.TabIndex = 17;
+            this.ptb_registrar.TabStop = false;
+            this.ptb_registrar.Click += new System.EventHandler(this.btn_registrar_Click);
+            this.ptb_registrar.MouseEnter += new System.EventHandler(this.ptb_registrar_MouseEnter);
+            this.ptb_registrar.MouseLeave += new System.EventHandler(this.ptb_registrar_MouseLeave);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1009, 10);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Inventario_escuela.Properties.Resources.background;
+            this.pictureBox3.Location = new System.Drawing.Point(346, 149);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(415, 368);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
+            // 
+            // lbl_aplicaciones
+            // 
+            this.lbl_aplicaciones.AutoSize = true;
+            this.lbl_aplicaciones.Location = new System.Drawing.Point(846, 79);
+            this.lbl_aplicaciones.Name = "lbl_aplicaciones";
+            this.lbl_aplicaciones.Size = new System.Drawing.Size(67, 13);
+            this.lbl_aplicaciones.TabIndex = 20;
+            this.lbl_aplicaciones.Text = "Aplicaciones";
+            // 
+            // lbl_especificaciones
+            // 
+            this.lbl_especificaciones.AutoSize = true;
+            this.lbl_especificaciones.Location = new System.Drawing.Point(846, 98);
+            this.lbl_especificaciones.Name = "lbl_especificaciones";
+            this.lbl_especificaciones.Size = new System.Drawing.Size(87, 13);
+            this.lbl_especificaciones.TabIndex = 20;
+            this.lbl_especificaciones.Text = "Especificaciones";
+            this.lbl_especificaciones.Visible = false;
+            // 
             // frm_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1005, 602);
+            this.Controls.Add(this.lbl_especificaciones);
+            this.Controls.Add(this.lbl_aplicaciones);
             this.Controls.Add(this.pnl_equipos);
             this.Controls.Add(this.pnl_salas);
             this.Controls.Add(this.panel2);
@@ -597,18 +621,19 @@
             this.pnl_titulo.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_buscar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_salas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_registrar)).EndInit();
             this.pnl_salas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_equipos.ResumeLayout(false);
             this.pnl_equipos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_foto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_buscar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_salas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_registrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -652,5 +677,7 @@
         private System.Windows.Forms.ComboBox cmb_estado_equipo;
         private System.Windows.Forms.Button btn_anhadir_especificacios_aplicaiones;
         private System.Windows.Forms.PictureBox ptb_foto;
+        private System.Windows.Forms.Label lbl_aplicaciones;
+        private System.Windows.Forms.Label lbl_especificaciones;
     }
 }
