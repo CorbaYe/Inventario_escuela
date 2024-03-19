@@ -589,6 +589,7 @@
             this.lbl_aplicaciones.Size = new System.Drawing.Size(67, 13);
             this.lbl_aplicaciones.TabIndex = 20;
             this.lbl_aplicaciones.Text = "Aplicaciones";
+            this.lbl_aplicaciones.Visible = false;
             // 
             // lbl_especificaciones
             // 
